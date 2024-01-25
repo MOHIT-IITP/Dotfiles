@@ -1,6 +1,4 @@
-# Demo
-This is my first GitHub Repository
+# DWM config 
 <br />
 <hr />
 Mohit Kumar
-(golden kumar from IITP)
