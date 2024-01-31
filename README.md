@@ -28,9 +28,13 @@ sudo pacman -S firefox python-pywalfox python-pywal google-chrome xwallpaper rof
 
 
 git clone https://git.suckless.org/dwm
+<hr />
 git clone https://git.suckless.org/st
+<hr />
 git clone https://git.suckless.org/dmenu
+<hr />
 git clone https://git.suckless.org/slstatus
+<hr />
 
 
 <h3>List of patches to apply in dwm</h3>
