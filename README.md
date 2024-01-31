@@ -6,7 +6,7 @@ Mohit Kumar
 sudo pacman -S firefox python-pywalfox python-pywal google-chrome xwallpaper rofi visual-studio-code-bin sublime-text xournalpp gcc g++ clangd neovim vim nano discord nvidia nvidia-settings
 
 
-<ol>
+<ul>
     <li>firefox</li>
     <li>python-pywalfox</li>
     <li>google-chrome</li>
@@ -24,7 +24,7 @@ sudo pacman -S firefox python-pywalfox python-pywal google-chrome xwallpaper rof
     <li>discord</li>
     <li>nvidia</li>
     <li>nvidia-settings</li>
-</ol>
+</ul>
 
 
 git clone https://git.suckless.org/dwm
@@ -34,8 +34,8 @@ git clone https://git.suckless.org/slstatus
 
 
 <h3>List of patches to apply in dwm</h3>
-<ol>
+<ul>
     <li>shiftview.c</li>
     <li>attachbelow</li>
     <li>alpha</li>
-</ol>
+</ul>
