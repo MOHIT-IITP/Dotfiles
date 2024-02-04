@@ -42,4 +42,7 @@ git clone https://git.suckless.org/slstatus
     <li>shiftview.c</li>
     <li>attachbelow</li>
     <li>alpha</li>
+    <li>vacant tags</li>
+    <li>always center</li>
+    <li>refresh rate</li>
 </ul>
