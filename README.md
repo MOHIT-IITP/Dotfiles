@@ -1,5 +1,5 @@
 # DWM config 
-<img src="./1707062949.png" width=1300px height=200px>
+<img src="./1707062949.png" width=1300px height=300px>
 <br />
 <hr />
 Mohit Kumar
