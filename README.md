@@ -1,6 +1,9 @@
 # DWM config 
-<img src="./1707062949.png" width=1300px height=200px>
+# Preview
+<img src="./1707062949.png" width=1300px height=400px>
+<img src="./1707111374.png" >
 <br />
+
 <hr />
 Mohit Kumar
 <h1>List of app to first download in the arch linux </h1>  
