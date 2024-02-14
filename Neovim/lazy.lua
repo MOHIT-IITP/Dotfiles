@@ -75,3 +75,5 @@ vim.api.nvim_set_keymap(
   ':w<CR>:! printf "Mohitttt your time of execution file is\n*************\n" &&  g++ -std=c++1z -o test %:r.cpp && time ./test < input.txt && printf "*************\n"<CR>',
   { noremap = true }
 )
+-- Python compile and run the file
+vim.api.nvim_set_keymap('n', '<leader>q', [[:w<CR>:! printf "Mohitttt your output is \n*****************************\n" && python3 %:r.py<CR>]], { noremap = true, silent = true })
