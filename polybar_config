@@ -96,7 +96,7 @@ label-occupied-foreground = ${colors.white}
 type = internal/date
 interval = 1
 
-date = %Y-%m-%d %H:%M:%S
+date = %a-%d-%b %I:%M
 
 label = %date%
 label-foreground = ${colors.primary}
