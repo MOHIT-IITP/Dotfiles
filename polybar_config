@@ -1,11 +1,12 @@
 [colors]
-background = #00000000
+background = #1a1823
 background-alt = #373B41
 foreground = #ffffff
 primary = #ffffff
 secondary = #8ABEB7
 alert = #ffffff
-grey = #3306080a
+hello = #c29df1
+grey = #d79921
 yellow = #fabd2f
 disabled = #ffffff
 white = #FFFFFF
@@ -16,7 +17,7 @@ width = 100%
 height = 20pt
 radius = 0
 wm-restack = i3
-monitor = DP-0
+monitor = HDMI-0 
 
 ; dpi = 96
 
@@ -97,7 +98,6 @@ type = internal/date
 interval = 1
 
 date = %a-%d-%b %I:%M
-
 label = %date%
 label-foreground = ${colors.primary}
 
@@ -118,6 +118,7 @@ type = internal/pulseaudio
 format-volume-prefix = "VOL "
 format-volume-prefix-foreground = ${colors.primary}
 format-volume = <label-volume>
+click-right = exec pavucontrol
 
 label-volume = %percentage%%
 
@@ -171,4 +172,5 @@ label-connected = %{F#F0C674}%ifname%%{F-} %local_ip%
 [settings]
 screenchange-reload = true
 pseudo-transparency = true
+
 
