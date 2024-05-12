@@ -1,0 +1,5 @@
+super + m
+  maim --select | tee ~/pix/ss/$(date +%s).png | xclip -selection clipboard -t image/png
+
+super + shift + m
+  maim ~/pix/ss/$(date +%s).png
