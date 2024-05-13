@@ -1,10 +1,16 @@
-<h1>If network is slow, try this; </h1>
-<p>cd /etc/resol.conf</p>
-<p>username 1.1.1.1</p>
-<p>username 1.1.0.0</p>
 
-<h1>
-If Youtube video is not working ,then  
-</h1>
-<p>Restart the audio interface in the system</p>
-<p>systemctl restart --user pipewire.service</p>
+Problem: 
+if network is slow, try this: 
+  -- cd /etc/resolv.conf
+  -- username 1.1.1.1
+  -- username 1.1.0.0
+
+Problem:
+If youtube video is not working, then:
+  -- restart the audio interface in the system
+  -- systemctl restart --user pipewire.service
+
+Problem:
+If picom blurs the maim(ss):
+  -- background blur exclud 
+  -- class_g = slop.
