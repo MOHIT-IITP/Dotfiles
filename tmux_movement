@@ -9,3 +9,6 @@ C-b ; : to rename the new window
 tmux new -s "name of session" : to create the new session
 tmux ls : to list the tmus sessions
 tmux attach -t "name of sessions" : to go the present session
+to detach : tmux detach 
+go to some dir then write tmux : you will create a tmux session with the name of that dir
+C-b o : to open sessionX
