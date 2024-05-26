@@ -1,9 +1,11 @@
 # DWM config 
 <h4> 1st ss</h4>
-<img src="./1707062949.png" width=100% height=100%>
+<img src="./1716722431.png" width=100% height=100%>
 <h4> 2nd ss</h4>
-<img src="./1707111374.png" height=100% width=100%>
+<img src="./1707062949.png" width=100% height=100%>
 <h4> 3rd ss</h4>
+<img src="./1707111374.png" height=100% width=100%>
+<h4> 4th ss</h4>
 <img src="./1707111388.png" height=100% width=100%>
 <br />
 
