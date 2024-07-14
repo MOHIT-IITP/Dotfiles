@@ -48,12 +48,14 @@
   "titleBarStyle": "hidden",
 },
 "apc.font.family": "SF Mono",
-// "workbench.activityBar.location": "hidden",
-"apc.activityBar": {
-  "position": "bottom",
-    "size": 30,
-    "itemMargin": 10,
-    "itemSize": 30,
+"workbench.activityBar.location": "hidden",
+"extensions.experimental.affinity": {
+  "asvetliakov.vscode-neovim": 1
 },
+"animations.Install-Method": "Apc Customize UI++",
+"apc.imports": [
+  "file://${userHome}/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
+],
 
 }
+
