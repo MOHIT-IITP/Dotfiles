@@ -1,3 +1,15 @@
+# Volume control
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+
+
 #
 super + s
   maim --select | tee ~/pix/ss/$(date +%s).png | xclip -selection clipboard -t image/png
@@ -77,8 +89,10 @@ super + {_,shift + }c
 	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
-# super + bracket{left,right}
-# 	bspc desktop -f {prev,next}.local
+super + h
+  bspc monitor -f west
+super + l
+  bspc monitor -f east 
 
 # to go to the left of the screen
 
