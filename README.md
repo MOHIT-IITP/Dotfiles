@@ -1,5 +1,5 @@
-# Window Manager Currently using (i3wm)
-<h4> 1st ss of the latest i3wm with Polybar </h4>
+# Window Manager Currently using (bspwm)
+<h4> 1st ss of the i3wm with Polybar </h4>
 <img src="./linux-img/1716722431.png" width=100% height=100%>
 <h4> 2nd ss  (dwm) </h4>
 <img src="./linux-img/1707062949.png" width=100% height=100%>
@@ -16,6 +16,7 @@ sudo pacman -S firefox python-pywalfox python-pywal google-chrome xwallpaper rof
 
 
 <ul>
+    <li> kanata (keyboard remaper</li>
     <li>firefox</li>
     <li>python-pywalfox</li>
     <li>google-chrome</li>
