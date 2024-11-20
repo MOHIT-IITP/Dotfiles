@@ -88,14 +88,6 @@ We welcome contributions to Kanata! To contribute:
    ```
 4. Push your branch and submit a Pull Request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
-
-## Acknowledgments
-
-Thanks to all contributors and users who help improve Kanata!
-
 ---
 
-Feel free to update placeholders like `your-username` and adjust content as needed.
+Feel free to update placeholders like `MOHIT-IITP` and adjust content as needed.
