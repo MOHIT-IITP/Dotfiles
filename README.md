@@ -11,6 +11,10 @@
 
 <hr />
 Mohit Kumar
+<h1>Best app list</h1>
+<li>Rofi (rofi -show drun, rofi -show window</li>
+<li>kanata (home row mods) </li>
+<li></li>
 <h1>List of app to first download in the arch linux </h1>  
 sudo pacman -S firefox python-pywalfox python-pywal google-chrome xwallpaper rofi visual-studio-code-bin sublime-text xournalpp gcc g++ clangd neovim vim nano discord nvidia nvidia-settings
 
