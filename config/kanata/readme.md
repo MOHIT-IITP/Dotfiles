@@ -5,7 +5,11 @@
 <h3>s --> option</h3>
 <h3>d --> shift</h3>
 <h3>f --> command</h3>
----
+<h1>For Linux</h1>
+<h3>a --> Super</h3>
+<h3>s --> Alt</h3>
+<h3>d --> Shift</h3>
+<h3>f --> Ctrl</h3>
 
 # Kanata App
 
