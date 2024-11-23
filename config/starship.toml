@@ -1,3 +1,4 @@
+# Place this cofig file in ~/.config 
 add_newline = false
 # A minimal left prompt
 format = """$directory$character"""
