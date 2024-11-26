@@ -10,7 +10,7 @@
 <h3>s --> Alt</h3>
 <h3>d --> Shift</h3>
 <h3>f --> Ctrl</h3>
-#how to switch to Layer 1 
+# how to switch to Layer 1 
 <h3> Hold Left Alt  or Right Alt or CapsLock to activate layer 1</h3>
 # Kanata App
 
