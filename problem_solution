@@ -21,3 +21,8 @@ how to install too many font like .ttf and .otf font at a time
 Problem:
 For the smooth rounded corner use the 
 -- Picom Git
+
+Problem:
+To check which key is presses 
+-- use xev 
+-- to install xev (yay -S xorg-xev)
