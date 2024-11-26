@@ -10,8 +10,10 @@
 <h3>s --> Alt</h3>
 <h3>d --> Shift</h3>
 <h3>f --> Ctrl</h3>
-# how to switch to Layer 1 
+
+# How to switch to Layer 1 
 <h3> Hold Left Alt  or Right Alt or CapsLock to activate layer 1</h3>
+
 # Kanata App
 
 Kanata is a powerful and customizable keyboard remapping tool designed to improve productivity and comfort while typing. With the newly added **Home Row Mod**, Kanata now offers seamless keyboard customization for both macOS and Linux users.
