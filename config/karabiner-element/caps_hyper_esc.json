@@ -1,0 +1,25 @@
+{
+  "description": "Caps Lock as Hyper when held, Escape when tapped",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "caps_lock",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to_if_alone": [
+        {
+          "key_code": "escape"
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "key_code": "left_shift",
+          "modifiers": ["left_command", "left_control", "left_option"]
+        }
+      ]
+    }
+  ]
+}
