@@ -26,3 +26,8 @@ Problem:
 To check which key is presses 
 -- use xev 
 -- to install xev (yay -S xorg-xev)
+
+Problem:
+How to add kanata at startup
+-- /usr/bin/kanata -c ~/.config/kanata/kanata.kbd & 
+-- add the above line in .xinitrc
