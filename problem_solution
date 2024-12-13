@@ -29,5 +29,6 @@ To check which key is presses
 
 Problem:
 How to add kanata at startup
--- /usr/bin/kanata -c ~/.config/kanata/kanata.kbd & 
--- add the above line in .xinitrc
+-- place the kanata.kbd file in /etc/kanata.kbd
+-- sudo systemctl enable kanata
+-- sudo systemctl start kanata
