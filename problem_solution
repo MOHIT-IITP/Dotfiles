@@ -32,3 +32,8 @@ How to add kanata at startup
 -- place the kanata.kbd file in /etc/kanata.kbd
 -- sudo systemctl enable kanata
 -- sudo systemctl start kanata
+
+Problem:
+If live Grep is not working: 
+-- try installing ripgrep in system
+-- do yay -S ripgrep
