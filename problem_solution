@@ -37,3 +37,7 @@ Problem:
 If live Grep is not working: 
 -- try installing ripgrep in system
 -- do yay -S ripgrep
+
+Problem:
+Font in the google chrome is monospace 
+-- just go in google chrome setting -> appearance -> and change the font from monospace -> what ever you like
