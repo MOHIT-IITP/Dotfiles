@@ -1,3 +1,4 @@
+# Make the navigation and typing speed faster 
 (defcfg
     process-unmapped-keys yes
 )
