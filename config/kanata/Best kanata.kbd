@@ -27,8 +27,8 @@
     ;-mod rmet 
     escctrl (tap-hold $tap-timeout $hold-timeout esc (layer-while-held layer1))
     vimnav (tap-hold $tap-timeout $hold-timeout v (layer-toggle vimnav))
-    lalt-mod (tap-hold $tap-timeout $hold-timeout lalt (layer-while-held layer1))
-    ralt-mod (tap-hold $tap-timeout $hold-timeout ralt (layer-while-held layer1))
+    lalt-mod (layer-switch layer1)
+    ralt-mod (layer-switch base)
 
     
 )
