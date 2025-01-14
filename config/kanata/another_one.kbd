@@ -1,0 +1,55 @@
+(defcfg
+    process-unmapped-keys yes
+)
+
+(defsrc
+    a s d f
+    h j k l ;
+    caps
+    v
+    lalt ralt
+)
+
+(defvar
+    tap-timeout 300
+    hold-timeout 300
+)
+
+(defalias
+    a-mod (tap-hold $tap-timeout $hold-timeout a lmet)
+    s-mod (tap-hold $tap-timeout $hold-timeout s lalt)
+    d-mod (tap-hold $tap-timeout $hold-timeout d lsft)
+    f-mod (tap-hold $tap-timeout $hold-timeout f lctl)
+    j-mod (tap-hold $tap-timeout $hold-timeout j rctl)
+    k-mod (tap-hold $tap-timeout $hold-timeout k rsft)
+    l-mod (tap-hold $tap-timeout $hold-timeout l ralt)
+    ;-mod (tap-hold $tap-timeout $hold-timeout ; rmet)
+    escctrl (tap-hold $tap-timeout $hold-timeout esc (layer-while-held layer1))
+    vimnav (tap-hold $tap-timeout $hold-timeout v (layer-toggle vimnav))
+    lalt-mod (tap-hold $tap-timeout $hold-timeout lalt (layer-toggle layer1 ))
+    ralt-mod (tap-hold $tap-timeout $hold-timeout ralt (layer-toggle layer1))
+
+
+)
+(deflayer base
+    a  s  d  f
+    h  j  k  l  ;
+    @escctrl
+    @vimnav
+    @lalt-mod @ralt-mod
+)
+(deflayer layer1
+    @a-mod @s-mod @d-mod @f-mod
+    h @j-mod @k-mod @l-mod @;-mod
+    @escctrl
+    @vimnav
+    @lalt-mod @ralt-mod
+)
+
+(deflayer vimnav
+    _   _   _   _
+    left    down    up  right   _
+    @escctrl
+    _
+    _  _
+)
