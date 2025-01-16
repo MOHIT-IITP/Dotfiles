@@ -33,12 +33,12 @@ separator = |
 separator-foreground = ${colors.disabled}
 
 font-0 = CommitMono Nerd Font:weight=bold:size=10;2
-font-1 = CodeNewRoman Nerd Font:weight=bold:size=12;2
-font-2 = CodeNewRoman Nerd Font:weight=regular:size=10;2
+font-1 = CommitMono Nerd Font:weight=bold:size=12;2
+font-2 = CommitMono Nerd Font:weight=regular:size=10;2
 
 modules-left = xworkspaces xwindow
-modules-center = date
-modules-right =  pulseaudio  memory cpu 
+modules-center = date github figma discord 
+modules-right =  pulseaudio  memory cpu screenshot 
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -86,7 +86,7 @@ label-unmounted-foreground = ${colors.disabled}
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume-prefix = "VOL "
+format-volume-prefix = "  " 
 format-volume-prefix-foreground = ${colors.primary}
 format-volume = <label-volume>
 
@@ -109,14 +109,14 @@ label-indicator-background = ${colors.secondary}
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = "RAM "
+format-prefix = "  " 
 format-prefix-foreground = ${colors.primary}
 label = %percentage_used:2%%
 
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "CPU "
+format-prefix =" " 
 format-prefix-foreground = ${colors.primary}
 label = %percentage:2%%
 
@@ -137,13 +137,33 @@ inherit = network-base
 interface-type = wired
 label-connected = %{F${colors.yellow}}%ifname%%{F-} %local_ip%
 
+[module/discord]
+type = custom/text
+content ="  "
+
+content-foreground = ${colors.magenta}
+click-left = discord &
+
+[module/github]
+type = custom/text
+content =  
+click-left = ~/.local/bin/open_github.sh
+
+[module/figma]
+type = custom/text
+content =   
+click-left = ~/.local/bin/open_figma.sh
+[module/screenshot]
+type = custom/text
+content =  
+content-foreground = ${colors.gray}
+click-left = maim --select | tee ~/pix/ss/$(date +%s).png | xclip -selection clipboard -t image/png  
+click-right = maim ~/pix/ss/$(date +%s).png
+
 [module/date]
 type = internal/date
 interval = 1
-
-date =  %A, %B %d, %Y %I:%M:%S %p
-
-
+date = %a %d %b %I:%M %p
 
 label = %date%
 label-foreground = ${colors.primary}
