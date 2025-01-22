@@ -1,0 +1,57 @@
+(defcfg
+    concurrent-tap-hold yes
+    log-layer-changes no
+    process-unmapped-keys yes
+)
+
+(defsrc
+    a s d f
+    h j k l ;     
+    caps    
+    v
+    lalt ralt
+)
+
+(defvar
+    tap-timeout 200
+    hold-timeout 150 
+)
+
+(defalias
+    a (switch ((key-timing 1 less-than $tap-timeout)) _ break () (tap-hold $tap-timeout $hold-timeout _ lmet) break)
+    s (switch ((key-timing 1 less-than $tap-timeout)) _ break () (tap-hold $tap-timeout $hold-timeout _ lalt) break)
+    d (switch ((key-timing 1 less-than $tap-timeout)) _ break () (tap-hold $tap-timeout $hold-timeout _ lsft) break)
+    f (switch ((key-timing 1 less-than $tap-timeout)) _ break () (tap-hold $tap-timeout $hold-timeout _ lctl) break)
+    j (switch ((key-timing 1 less-than $tap-timeout)) _ break () (tap-hold $tap-timeout $hold-timeout _ rctl) break)
+    k (switch ((key-timing 1 less-than $tap-timeout)) _ break () (tap-hold $tap-timeout $hold-timeout _ rsft) break)
+    l (switch ((key-timing 1 less-than $tap-timeout)) _ break () (tap-hold $tap-timeout $hold-timeout _ ralt) break)
+    ; (switch ((key-timing 1 less-than $tap-timeout)) _ break () (tap-hold $tap-timeout $hold-timeout _ rmet) break)
+    escctrl (tap-hold $tap-timeout $hold-timeout esc (layer-while-held layer1))
+    vimnav (tap-hold $tap-timeout $hold-timeout v (layer-toggle vimnav))
+    lalt-mod (tap-hold $tap-timeout $hold-timeout lalt (layer-toggle layer1))
+    ralt-mod (tap-hold $tap-timeout $hold-timeout ralt (layer-toggle layer1))
+
+    
+)
+(deflayer base
+    @a @s @d @f
+    h @j @k @l @;
+    @escctrl
+    @vimnav
+    @lalt-mod @ralt-mod
+)
+(deflayer layer1
+    @a @s @d @f
+    h @j @k @l @;
+    @escctrl
+    @vimnav 
+    @lalt-mod @ralt-mod
+)
+
+(deflayer vimnav     
+    _   _   _   _   
+    left    down    up  right   _   
+    @escctrl    
+    _
+    _  _ 
+)
