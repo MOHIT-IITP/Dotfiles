@@ -26,7 +26,7 @@
     k (switch ((key-timing 1 less-than $tap-timeout)) _ break () (tap-hold $tap-timeout $hold-timeout _ rsft) break)
     l (switch ((key-timing 1 less-than $tap-timeout)) _ break () (tap-hold $tap-timeout $hold-timeout _ ralt) break)
     ; (switch ((key-timing 1 less-than $tap-timeout)) _ break () (tap-hold $tap-timeout $hold-timeout _ rmet) break)
-    escctrl (tap-hold $tap-timeout $hold-timeout esc (layer-while-held layer1))
+    escctrl (tap-hold $tap-timeout $hold-timeout esc (multi lmet lalt lsft lctl))
     vimnav (tap-hold $tap-timeout $hold-timeout v (layer-toggle vimnav))
     lalt-mod (tap-hold $tap-timeout $hold-timeout lalt (layer-toggle layer1))
     ralt-mod (tap-hold $tap-timeout $hold-timeout ralt (layer-toggle layer1))
