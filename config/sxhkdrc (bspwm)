@@ -9,12 +9,12 @@ XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 
-alt + space 
-    ~/.config/rofi/launchers/type-3/launcher.sh
+super + space 
+    rofi -show drun
 
 # terminal emulator
-alt + Return 
-   kitty 
+super + alt + ctrl + shift + Return 
+   ghostty 
 
 
 # make sxhkd reload its configuration files:
@@ -51,5 +51,44 @@ super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
 
+super + alt + ctrl + shift + g 
+    google-chrome-stable
 
+super + alt + ctrl + shift + r 
+    zen
+
+super + alt + ctrl + shift + d 
+    discord
+
+
+
+    # Focus desktop on monitor DP-0
+super + alt + ctrl + shift + j 
+    bspc desktop -f ^1
+
+super + alt + ctrl + shift + k 
+    bspc desktop -f ^2
+
+super + alt + ctrl + shift + l 
+    bspc desktop -f ^3
+
+super + alt + ctrl + shift + n 
+    bspc desktop -f ^4
+
+# Focus desktop on monitor HDMI-0
+super + alt + ctrl + shift + m 
+    bspc desktop -f ^5
+
+super + alt + ctrl + shift + u 
+    bspc desktop -f ^6
+
+super + alt + ctrl + shift + i 
+    bspc desktop -f ^7
+
+super + alt + ctrl + shift + o 
+    bspc desktop -f ^8
+
+
+super + alt + ctrl + shift + p 
+    bspc desktop -f ^9
 
