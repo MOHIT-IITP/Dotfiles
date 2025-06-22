@@ -44,4 +44,11 @@ simply place the tmux config in the ~/.config/tmux/tmux.conf
 
 Problem:
 Font in the google chrome is monospace 
--- just go in google chrome setting -> appearance -> and change the font from monospace -> what ever you like
+-- mkdir .config/fontconfig/fonts.conf
+add
+<fontconfig>
+  <alias>
+    <family>monospace</family>
+    <prefer><family>JetBrainsMono Nerd Font</family></prefer>
+  </alias>
+</fontconfig>
