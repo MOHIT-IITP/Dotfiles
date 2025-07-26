@@ -1,0 +1,57 @@
+(defcfg
+    concurrent-tap-hold yes
+    log-layer-changes no
+    process-unmapped-keys yes
+)
+
+(defsrc
+    a s d f
+    h j k l ;     
+    caps    
+    v c n m 
+    lalt lctl
+)
+
+(defvar
+    tap-timeout 150
+    hold-timeout 250 
+)
+
+(defalias
+    escctrl (tap-hold $tap-timeout $hold-timeout esc (multi lmet lctl lalt lsft))
+    vimnav (tap-hold $tap-timeout $hold-timeout v (layer-toggle vimnav))
+    lalt-mod lctl 
+    lctl-mod lalt
+    cnav (tap-hold $tap-timeout $hold-timeout c (layer-toggle cnav))
+    
+
+  ms↑ (movemouse-accel-up 1 1000 1 5)
+  ms← (movemouse-accel-left 1 1000 1 5)
+  ms↓ (movemouse-accel-down 1 1000 1 5)
+  ms→ (movemouse-accel-right 1 1000 1 5)
+
+)
+(deflayer base
+    a s d f
+    h j k l ;
+    @escctrl
+    @vimnav @cnav n m 
+    @lalt-mod @lctl-mod
+)
+
+(deflayer vimnav     
+    _   _   _   _   
+    left    down    up  right   _   
+    @escctrl    
+    _  _ _ _
+    _  _ 
+)
+(deflayer cnav
+    _   _   _   _   
+    @ms← @ms↓ @ms↑ @ms→  _   
+    @escctrl    
+    _  _  mltp mrtp
+    _  _ 
+)
+
+
