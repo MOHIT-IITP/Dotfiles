@@ -7,7 +7,7 @@
 
 # Basic tools
 ```
-sudo pacman -S fzf zsh wget neovim curl kitty firefox discord xclip clipboard grim slurp yazi eza zoxide ripgrep base-devel nvidia nvidia-setting nvidia-utils starship unzip btop net-tools git kitty
+sudo pacman -S wl-clipboard fzf zsh wget neovim curl kitty firefox discord xclip clipboard grim slurp yazi eza zoxide ripgrep base-devel nvidia nvidia-setting nvidia-utils starship unzip btop net-tools git kitty
 ```
 
 * yay
