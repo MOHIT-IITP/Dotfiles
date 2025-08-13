@@ -1,0 +1,7 @@
+[plugin]
+deps = []
+
+[[flavor.deps]]
+use = "tkapias/nightfly"
+rev = "599b8ad"
+hash = "d1a9e05ecbbd63bc5bb85a54e7f1e33a"
