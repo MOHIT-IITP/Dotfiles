@@ -1,5 +1,3 @@
-[!Important]
-
 # Basic tools
 ```
 sudo pacman -S zsh wget neovim curl kitty firefox discord xclip clipboard grim slurp yazi eza zoxide ripgrep base-devel nvidia nvidia-setting nvidia-utils starship unzip btop net-tools git kitty
@@ -141,3 +139,24 @@ git config --global user.name "MOHIT-IITP"
 ```
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
+
+* Install Neovim Config
+```
+git clone git@github.com:MOHIT-IITP/nvim.git
+```
+
+* kitty config
+```
+background_opacity 0.8
+window_padding_width 10 
+
+font_family      JetBrainsMono Nerd Font 
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+copy_on_select yes
+font_size 16.0
+```
+
+
