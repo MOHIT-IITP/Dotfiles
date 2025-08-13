@@ -29,7 +29,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ```
 
 
-** zsh config **
+* zsh config
 ```
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 
@@ -66,3 +66,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 ```
+
+
