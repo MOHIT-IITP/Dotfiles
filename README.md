@@ -1,12 +1,6 @@
-# Window Manager Currently using (bspwm)
+# Window Manager Currently using (Hyprland)
 <h4> 1st ss of the i3wm with Polybar </h4>
-<img src="./linux-img/1716722431.png" width=100% height=100%>
-<h4> 2nd ss  (dwm) </h4>
-<img src="./linux-img/1707062949.png" width=100% height=100%>
-<h4> 3rd ss (dwm)</h4>
-<img src="./linux-img/1707111374.png" height=100% width=100%>
-<h4> 4th ss (dwm)</h4>
-<img src="./linux-img/1707111388.png" height=100% width=100%>
+<img src="./linux-img/fullscreen.png" width=100% height=100%>
 <br />
 
 <hr />
