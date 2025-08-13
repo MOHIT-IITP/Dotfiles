@@ -9,7 +9,7 @@ Mohit Kumar
 <li>Rofi (rofi -show drun, rofi -show window</li>
 <li>kanata (home row mods) </li>
 <li></li>
-<h1>List of app to first download in the arch linux </h1>  
+<h1>List of app to first download in the arch linux (dwm , bspwm , i3) </h1>  
 sudo pacman -S firefox python-pywalfox python-pywal google-chrome xwallpaper rofi visual-studio-code-bin sublime-text xournalpp gcc g++ clangd neovim vim nano discord nvidia nvidia-settings
 
 
@@ -32,25 +32,4 @@ sudo pacman -S firefox python-pywalfox python-pywal google-chrome xwallpaper rof
     <li>discord</li>
     <li>nvidia</li>
     <li>nvidia-settings</li>
-</ul>
-
-
-git clone https://git.suckless.org/dwm
-<hr />
-git clone https://git.suckless.org/st
-<hr />
-git clone https://git.suckless.org/dmenu
-<hr />
-git clone https://git.suckless.org/slstatus
-<hr />
-
-
-<h3>List of patches to apply in dwm</h3>
-<ul>
-    <li>shiftview.c</li>
-    <li>attachbelow</li>
-    <li>alpha</li>
-    <li>vacant tags</li>
-    <li>always center</li>
-    <li>refresh rate</li>
 </ul>
