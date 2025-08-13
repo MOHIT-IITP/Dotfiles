@@ -1,6 +1,6 @@
 # Window Manager Currently using (Hyprland)
 <h4> 1st ss of the i3wm with Polybar </h4>
-<img src="./linux-img/fullscreen.png" width=100% height=100%>
+<img src="./linux-img/something.png" width=100% height=100%>
 <br />
 
 <hr />
