@@ -46,7 +46,7 @@ git clone https://aur.archlinux.org/yay
 makepkg -si
 ```
 
-## zsh
+# zsh
 
 * ohmyzsh 
 ```
@@ -101,7 +101,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 ```
-
+# Kanata
 * Kanata Config
 ```
 (defcfg
@@ -163,6 +163,7 @@ export NVM_DIR="$HOME/.nvm"
 
 ```
 
+# GitHub
 
 * Git Config
 ```
@@ -177,11 +178,13 @@ git config --global user.name "MOHIT-IITP"
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
+# Neovim
 * Install Neovim Config
 ```
 git clone git@github.com:MOHIT-IITP/nvim.git
 ```
 
+# Kitty
 * kitty config
 ```
 background_opacity 0.8
