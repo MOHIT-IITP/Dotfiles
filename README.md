@@ -209,4 +209,9 @@ copy_on_select yes
 font_size 16.0
 ```
 
+# tmux
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
 
