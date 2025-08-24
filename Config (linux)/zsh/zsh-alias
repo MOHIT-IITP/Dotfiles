@@ -1,8 +1,0 @@
-alias "ys"="yay -S"
-alias "vi"="nvim"
-alias "ga"="git pull  origin main && git add ."
-alias "gs"="git status"
-alias "gc"="git commit -m"
-alias "gp"="git push origin main"
-alias "gpl"="git pull origin main"
-eval "$(zoxide init zsh)"

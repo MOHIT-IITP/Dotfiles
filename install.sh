@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 set -e
 
@@ -545,5 +546,109 @@ cat > ~/.config/kanata/kanata.kbd <<'EOF'
 )
 EOF
 
-echo ">>> Setup complete! 🚀"
+
+# ------------------------- yazi config -------------------------           
+
+# Path to your yazi config folder (adjust if needed)
+SOURCE_DIR="$PWD/yazi"
+TARGET_DIR="$HOME/.config/yazi"
+
+echo ">>> Setting up Yazi config..."
+
+# Check if source exists
+if [ ! -d "$SOURCE_DIR" ]; then
+  echo "❌ Error: $SOURCE_DIR does not exist!"
+  exit 1
+fi
+
+# Remove old config if it exists
+if [ -d "$TARGET_DIR" ]; then
+  echo "⚠️  Existing Yazi config found. Replacing..."
+  rm -rf "$TARGET_DIR"
+fi
+
+# Copy config
+mkdir -p "$HOME/.config"
+cp -r "$SOURCE_DIR" "$HOME/.config/"
+
+echo ">>> Yazi config installed at $TARGET_DIR"
+
+
+# ------------------------- font config -------------------------           
+CONFIG_DIR="$HOME/.config/fontconfig"
+CONFIG_FILE="$CONFIG_DIR/fonts.conf"
+
+echo ">>> Setting up fontconfig..."
+
+# Create directory if it doesn't exist
+mkdir -p "$CONFIG_DIR"
+
+# Write the XML config
+cat > "$CONFIG_FILE" << 'EOF'
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+  <match target="pattern">
+    <test name="family" qual="any">
+      <string>sans-serif</string>
+    </test>
+    <edit name="family" mode="assign" binding="strong">
+      <string>Liberation Sans</string>
+    </edit>
+  </match>
+
+  <match target="pattern">
+    <test name="family" qual="any">
+      <string>serif</string>
+    </test>
+    <edit name="family" mode="assign" binding="strong">
+      <string>Liberation Serif</string>
+    </edit>
+  </match>
+
+  <match target="pattern">
+    <test name="family" qual="any">
+      <string>monospace</string>
+    </test>
+    <edit name="family" mode="assign" binding="strong">
+      <string>CaskaydiaMono Nerd Font</string>
+    </edit>
+  </match>
+
+  <alias>
+    <family>system-ui</family>
+    <prefer>
+      <family>Liberation Sans</family>
+    </prefer>
+  </alias>
+
+  <alias>
+    <family>ui-monospace</family>
+    <default>
+      <family>monospace</family>
+    </default>
+  </alias>
+
+  <alias>
+    <family>-apple-system</family>
+    <prefer>
+      <family>Liberation Sans</family>
+    </prefer>
+  </alias>
+
+  <alias>
+    <family>BlinkMacSystemFont</family>
+    <prefer>
+      <family>Liberation Sans</family>
+    </prefer>
+  </alias>
+</fontconfig>
+EOF
+
+echo ">>> Fontconfig installed at $CONFIG_FILE"
+
+
+
+
+echo ">>> Setup complete! Setup Createdy by MOHIITP 🚀"
 echo "👉 Restart your terminal and run: chsh -s $(which zsh)"
