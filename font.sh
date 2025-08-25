@@ -1,39 +1,41 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 
-# Correct Nerd Fonts package names from official releases
 FONTS=(
   "Agave"
-  "CaskaydiaCove"
+  "CascadiaCode"
   "CodeNewRoman"
   "FiraCode"
   "Hack"
+  "Monaspace"
+  "Mononoki"
   "SpaceMono"
-  "TerminessTTF"
+  "ShareTechMono"
+  "Terminus"
   "Ubuntu"
 )
 
-# Destination directory (system-wide)
-DEST_DIR="/usr/local/share/fonts/NerdFonts"
-mkdir -p "$DEST_DIR"
+DEST="$HOME/.local/share/fonts/NerdFonts"
+mkdir -p "$DEST"
 
-# Base release URL
 BASE_URL="https://github.com/ryanoasis/nerd-fonts/releases/latest/download"
 
-echo ">>> Downloading and installing Nerd Fonts..."
+echo ">>> Installing Nerd Fonts into $DEST"
 
 for FONT in "${FONTS[@]}"; do
-  ZIP_NAME="${FONT}.zip"
-  echo ">>> Installing $FONT..."
-  if wget -q --show-progress -O "/tmp/$ZIP_NAME" "$BASE_URL/$ZIP_NAME"; then
-    unzip -o "/tmp/$ZIP_NAME" -d "$DEST_DIR/$FONT" >/dev/null
-    rm "/tmp/$ZIP_NAME"
-  else
-    echo "⚠️  Font $FONT not found in Nerd Fonts release. Skipping..."
-  fi
+  ZIP="${FONT}.zip"
+  echo ">>> Downloading $FONT ..."
+  curl -fL -o "/tmp/$ZIP" "$BASE_URL/$ZIP"
+  
+  echo ">>> Extracting $FONT ..."
+  mkdir -p "$DEST/$FONT"
+  unzip -o "/tmp/$ZIP" -d "$DEST/$FONT" >/dev/null || {
+    echo "⚠️ Failed to unzip $ZIP (maybe not available in release). Skipping..."
+  }
+  rm -f "/tmp/$ZIP"
 done
 
-echo ">>> Updating font cache..."
-fc-cache -fv
+echo ">>> Updating font cache ..."
+fc-cache -fv "$DEST"
 
-echo ">>> Nerd Fonts installation complete! Script by MOHIITP 🚀"
+echo "✅ Done! Installed: ${FONTS[*]}"
